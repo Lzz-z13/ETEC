@@ -1,0 +1,115 @@
+/* 
+    ==============================
+    |    ARQUIVO: estilo.css     |
+    ==============================
+*/
+
+
+
+/* SELETOR UNIVERSAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} /* SELETOR UNIVERSAL */
+
+/* Corpo do site */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    padding: 20px;
+}
+
+/* Imagens */
+.img-media {
+    width: 80%;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+
+/* H2 DAS SECTIONS */
+.secaofilmeserie #h2film{
+    color: red;
+    margin-bottom: 20px;
+    font-size: x-large;
+}
+.secaomusicapodcast #h2music{
+    color: green;
+    margin-bottom: 20px;
+    font-size: x-large;
+}
+.secaogamestecnologia #h2game{
+    color: blue;
+    margin-bottom: 20px;
+    font-size: x-large;
+} /* FIM H2 */
+
+
+
+/* SECTION FILMESERIE */
+.secaofilmeserie .interestelar{
+    text-align: left;
+    font-size: large;
+    width: 80%;
+}
+.secaofilmeserie .breakingbad{
+    text-align: left;
+    font-size: large;
+    width: 80%;
+}
+.secaofilmeserie #p-filmeserie{
+    font-size: medium;
+    margin-top: 15px;
+    
+} /* FIM SECTION FILMESERIE */
+
+
+
+/* SECTION MUSICAPODCAST */
+.secaomusicapodcast .nuts{
+    text-align: left;
+    font-size: large;
+    width: 75%;
+}
+
+.secaomusicapodcast .podpah-podcast{
+    text-align: left;
+    font-size: large;
+    width: 85%;
+}
+
+.secaomusicapodcast #p-musicpodcast{
+    font-size: medium;
+    margin-top: 15px;
+} /* FIM SECTION MUSICAPODCAST */
+
+
+
+/* SECTION GAMESTECNOLOGIA */
+.secaogamestecnologia .games{
+    text-align: left;
+    font-size: large;
+    width: 700px;
+    height: 590px;
+}
+
+.secaogamestecnologia .tecnologia{
+    text-align: left;
+    font-size: large;
+    width: 700px;
+}
+
+.secaogamestecnologia #p-gametec{
+    font-size: medium;
+    margin-top: 325px;
+} /* FIM SECTION GAMESTECNOLOGIA */
