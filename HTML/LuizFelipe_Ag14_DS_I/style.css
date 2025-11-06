@@ -1,0 +1,78 @@
+/* SELETOR UNIVERSAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background-color: #3f51b5;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* MAIN */
+main {
+    padding: 20px;
+}
+
+/* SEÇÕES EM DUAS COLUNAS */
+.Column1, .Column2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* BOX DE IMAGEM */
+.Column1 div, .Column2 div /* todas as divs dentro dessa Column 1*/ {
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.Column1 div:hover, .Column2 div:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    /* !!! INTERAÇÃO COM A I.A !!! */
+    /* Eu pesquisei um "hover" -> passar o mouse por cima, e achei essa estilização ótima no meu contexto */
+}
+
+/* IMAGENS */
+.Column1 img, .Column2 img /* todas as imagens dentro dessa Column 1*/ {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* PARÁGRAFOS DAS BOXES */
+.Column1 p, .Column2 p {
+    font-size: 0.95rem;
+    text-align: justify;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background-color: #3f51b5;
+    color: white;
+    padding: 10px 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
