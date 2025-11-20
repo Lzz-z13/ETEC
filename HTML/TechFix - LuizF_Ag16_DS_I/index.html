@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TechFix - Assistência Técnica Inteligente</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="w3-light-grey">
+    <!-- ========================= SIDEBAR ========================= -->
+    <aside class="sidebar w3-card-2">
+      <div class="logo-area">
+        <img src="IMG/logomarca.png" alt="Logo TechFix" />
+        <h1>TechFix</h1>
+        <p class="slogan">Assistência Técnica Inteligente</p>
+      </div>
+
+      <nav class="menu">
+          <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="#parceiros"><i class="fa-solid fa-handshake"></i> Parceiros</a>
+          <a href="#servicos"><i class="fa-solid fa-tools"></i> Serviços / Produtos</a>
+        <a href="#faq"><i class="fa-solid fa-circle-question"></i> FAQ</a>
+      </nav>
+
+      <div class="social">
+        <a href="#" aria-label="Instagram"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="#" aria-label="Facebook"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="#" aria-label="LinkedIn"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+    </aside>
+
+    <!-- ========================= MAIN ========================= -->
+    <main>
+      <!-- HOME -->
+      <section id="home" class="secao w3-container">
+        <header class="secao-header">
+          <h2>Home</h2>
+        </header>
+
+        <div class="banner">
+          <img src="IMG/BannerTechFix.png" alt="Banner TechFix" />
+        </div>
+
+        <h3>Bem-vindo à TechFix</h3>
+        <p>
+          Fundada em 2018, a TechFix oferece suporte técnico, venda de peças e
+          serviços gerenciados para clientes residenciais e empresariais.
+        </p>
+
+        <div class="info-cards">
+          <div class="card">
+            <h4>Missão</h4>
+            <p>Reparos inteligentes com agilidade e transparência.</p>
+          </div>
+
+          <div class="card">
+            <h4>Visão</h4>
+            <p>Ser referência nacional em assistência técnica moderna.</p>
+          </div>
+
+          <div class="card">
+            <h4>Valores</h4>
+            <p>Segurança · Qualidade · Honestidade</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PARCEIROS -->
+      <section id="parceiros" class="secao w3-container w3-margin-top">
+        <header class="secao-header"><h2>Parceiros</h2></header>
+
+        <div class="parceiros-grid">
+          <div class="parceiro">
+            <img src="IMG/MicroTech.png" alt="MicroTech" />
+            <p>MicroTech Components — Peças certificadas</p>
+          </div>
+
+          <div class="parceiro">
+            <img src="IMG/DataWave_Solutions.png" alt="DataWave" />
+            <p>DataWave Solutions — Softwares de diagnóstico</p>
+          </div>
+
+          <div class="parceiro">
+            <img src="IMG/SecureParts.png" alt="SecureParts" />
+            <p>SecureParts BR — Telas e baterias originais</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="servicos"
+        class="secao w3-container w3-margin-top w3-white w3-round-large w3-padding"
+      >
+        <header class="w3-row-padding w3-margin-bottom">
+          <div class="w3-col m2 s12">
+            <img
+              src="IMG/logomarca.png"
+              alt="Logo TechFix"
+              style="width: 100%; max-width: 120px; border-radius: 8px"
+            />
+          </div>
+          <div class="w3-col m10 s12">
+            <h2 style="margin-bottom: 4px">TechFix</h2>
+            <p style="margin: 0">
+              Assistência Técnica Inteligente —
+              <em>Seu parceiro em tecnologia</em>
+            </p>
+          </div>
+        </header>
+
+        <div class="w3-row-padding">
+          <div class="w3-col m7 s12">
+            <div
+              class="w3-display-container w3-border w3-round-medium slideshow-container"
+              aria-label="Slideshow de serviços"
+            >
+              <img
+                class="mySlides w3-animate-opacity"
+                src="IMG/ManutencaoHardware.jpeg"
+                style="width: 100%; display: none"
+                alt="Manutenção de Hardware"
+              />
+              <img
+                class="mySlides w3-animate-opacity"
+                src="IMG/VendaEquipamentos.jpg"
+                style="width: 100%; display: none"
+                alt="Venda de Equipamentos"
+              />
+              <img
+                class="mySlides w3-animate-opacity"
+                src="IMG/ServicosGerenciados.jpeg"
+                style="width: 100%; display: none; margin-left: 19px"
+                alt="Serviços Gerenciados"
+              />
+
+              <button
+                class="w3-button w3-white sl-btn w3-display-left"
+                onclick="plusSlides(-1)"
+                aria-label="Anterior"
+              >
+                ❮
+              </button>
+              <button
+                class="w3-button w3-white sl-btn w3-display-right"
+                onclick="plusSlides(1)"
+                aria-label="Próximo"
+              >
+                ❯
+              </button>
+
+              <!-- dots -->
+              <div
+                style="
+                  text-align: center;
+                  position: absolute;
+                  right: 12px;
+                  bottom: 12px;
+                "
+              >
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Descrição (coluna direita) -->
+          <div class="w3-col m5 s12">
+            <h3 class="slide-title">Nossos serviços e produtos</h3>
+            <p id="slideDesc" class="slide-desc">
+              <strong>Manutenção de Hardware:</strong> Diagnóstico completo e
+              substituição de peças com garantia.
+            </p>
+
+            <ul class="w3-ul">
+              <li>
+                <strong>Suporte Remoto</strong> — Atendimento rápido para
+                problemas de software.
+              </li>
+              <li>
+                <strong>Venda de Equipamentos</strong> — Laptops e desktops com
+                garantia.
+              </li>
+              <li>
+                <strong>-Serviços Gerenciados</strong> — Planos mensais para
+                empresas.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="w3-margin-top">
+          <a href="#contato" class="w3-button w3-blue w3-round"
+            >Solicitar Orçamento</a
+          >
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="secao w3-container w3-margin-top">
+        <header class="secao-header"><h2>FAQ</h2></header>
+
+        <div class="faq-lista">
+          <details>
+            <summary>Quanto tempo leva o reparo?</summary>
+            <p>Depende do serviço. Troca de bateria: 20–40 minutos.</p>
+          </details>
+          <details>
+            <summary>Vocês usam peças originais?</summary>
+            <p>Sim, peças certificadas.</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="contato" class="w3-container w3-margin-top">
+        <div class="w3-row">
+          <div class="w3-col m6 s12">
+            <p>
+              Email:
+              <a href="mailto:contato@techfix.com">contato@techfix.com</a>
+            </p>
+            <p>
+              Telefone: <a href="tel:+5511999999999">+55 (11) 99999-9999</a>
+            </p>
+          </div>
+          <div class="w3-col m6 s12">
+            <p>Redes sociais:</p>
+            <a href="#" class="w3-button w3-round"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="w3-button w3-round"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="w3-button w3-round"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+
+        <p class="w3-small w3-text-gray">
+          © 2025 TechFix — Empresa fictícia para atividade acadêmica
+        </p>
+      </footer>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
